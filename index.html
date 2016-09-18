@@ -1,0 +1,25 @@
+<html ng-app='imdb'> <!--we can name the ng-app whatever we want-->
+	<head>
+		<meta content="charset=UTF-8"/>
+		<title>IMDB</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="js/angular.js"></script>
+		<script src="app/IMDB.js"></script>
+	</head>
+	<body>
+		<div id="title">Actors</div>
+		<div ng-controller="gallery" id="controller" class="clearbox">
+			search:
+			<input ng-model="query"/>
+		
+			<hr>
+			<div id="button">
+			<button ng-click="sort('up')">Up</button>|<button ng-click="sort('down')">Down</button>
+			 </div>
+			<div ng-repeat="actor in myActors|filter:{name:query}|orderBy:upDown" class="actors">
+				<img ng-src="img/{{actor.img}}"/>
+				<h1><a href="{{actor.link}}">{{actor.name}}</a></h1>
+			</div>
+		</div>
+	</body>
+</html>

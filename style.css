@@ -1,0 +1,41 @@
+body #title{
+	font-size: 40px;
+	text-align: center;
+}
+body #button{
+	height: 50px;
+}
+body #button button{
+	width:50px;
+}
+div .actors img{
+	width:150px;
+	height:220px;
+	margin-left: 23px;
+	
+}
+.actors h1{
+	font-size:25px;
+	text-align: center;
+}
+.actors{
+	float:left;
+	width:200px;
+	height: auto;
+	margin:0 auto;
+}
+body #controller{
+	width:900px;
+	margin:0 auto;
+}
+#controller h1 a{
+	color:black;
+	text-decoration: none;
+}
+#controller img:hover{
+	border:2px solid #cc0000;
+}
+.clearbox{
+	clear:both;
+	overflow: hidden;
+}
